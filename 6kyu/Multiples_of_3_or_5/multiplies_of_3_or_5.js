@@ -7,11 +7,16 @@ const solution = number => {
       sum += i;
     } else if (i % 3 === 0) {
       sum += i;
-    } else if (i & 5 === 0) {
+    } else if (i % 5 === 0) {
       sum += i;
     } else if (i < 0) {
       sum += 0;
     }
   }
+
   return sum;
 }
+
+console.log(solution(10));
+console.log(solution(25));
+console.log(solution(300));
